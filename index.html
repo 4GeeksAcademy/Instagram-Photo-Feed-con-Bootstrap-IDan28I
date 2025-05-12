@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Instagram</title>
+    <style>
+        * {
+            font-family: "Roboto", sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar bg-light sticky-top">
+        <div class="container-fluid">
+            <div class="d-flex align-items-center gap-1">
+                <i class="fa-brands fa-instagram"></i>
+                <a class="navbar-brand" href="https://www.instagram.com"></i>Instagram</a>
+            </div>
+            <div class="d-flex">
+                <button type="button" class="btn btn-success me-2" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">
+                    Create a new post
+                </button>
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                Caption:
+                                <div class="input-group">
+                                    <textarea class="form-control" aria-label="With textarea"
+                                        placeholder="Add the caption of your post here"></textarea>
+                                </div>
+                                <div class="modal-icons mt-3">
+                                    <button type="button" class="btn btn-light">
+                                        <i class="fa-solid fa-camera"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-light">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-success">Publish</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <i class="fa-solid fa-gear"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-light">
+                        <li><a class="dropdown-item active" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                        <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid" >
+        <ul class="nav nav-tabs border-0 d-flex justify-content-center mb-3" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+                    type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"><i
+                        class="fa-solid fa-table-cells"></i></button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
+                    type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false"><i
+                        class="fa-solid fa-square"></i></button>
+            </li>
+        </ul>
+        <div class="tab-content d-flex justify-content-center" id="myTabContent">
+            <div class="tab-pane fade show active mx-5" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+                tabindex="0">
+                <div class="row mx-3 row-cols-1 row-cols-md-3 g-3 mb-5">
+                    <div class="col">
+                        <div class="card border-0">
+                            <img class="card-img" 
+                                src="https://cdn.pixabay.com/photo/2017/04/30/18/33/kittens-2273598_1280.jpg"style="aspect-ratio: 1/1; object-fit: cover;" >
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0">
+                            <img class="card-img" 
+                                src="https://cdn.pixabay.com/photo/2024/01/31/16/15/kitchen-8544377_1280.png"style="aspect-ratio: 1/1; object-fit: cover;" >
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0">
+                            <img class="card-img" 
+                                src="https://m.media-amazon.com/images/M/MV5BNGZkMGYxNGItZmM3MC00NjJmLTg1NzktYzg5ZmY3NDE2ZTMyXkEyXkFqcGc@._V1_.jpg"style="aspect-ratio: 1/1; object-fit: cover;" >
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0">
+                            <img class="card-img" 
+                                src="https://cdn.pixabay.com/photo/2017/06/24/18/06/japan-2438358_1280.jpg"style="aspect-ratio: 1/1; object-fit: cover;" >
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0">
+                            <img class="card-img" 
+                                src="https://cdn.pixabay.com/photo/2025/04/30/13/27/red-baron-squadron-9569430_1280.jpg"style="aspect-ratio: 1/1; object-fit: cover;" >
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0">
+                            <img class="card-img" 
+                                src="https://cdn.pixabay.com/photo/2025/04/20/08/44/purple-leaf-plum-9545165_1280.jpg"style="aspect-ratio: 1/1; object-fit: cover;" >
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0">
+                            <img class="card-img" 
+                                src="https://cdn.pixabay.com/photo/2022/11/30/19/21/zizhu-temple-7627473_960_720.jpg"style="aspect-ratio: 1/1; object-fit: cover;" >
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0">
+                            <img class="card-img" 
+                                src="https://cdn.pixabay.com/photo/2024/12/28/13/28/tram-9296118_960_720.jpg"style="aspect-ratio: 1/1; object-fit: cover;" >
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0">
+                            <img class="card-img"src="https://cdn.pixabay.com/photo/2018/01/29/10/40/sparks-3115784_1280.jpg"style="aspect-ratio: 1/1; object-fit: cover;" >
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                <div class="card my-3" style="width: 25rem;">
+                    <div class="card-text d-flex justify-content-between align-items-center px-2">
+                        <h5 class="card-title">Gatitos</h5>
+                        <p style="font-size:12px;">01/10</p>
+                    </div>
+                    <img src="https://cdn.pixabay.com/photo/2017/04/30/18/33/kittens-2273598_1280.jpg"style="aspect-ratio: 1/1; object-fit: cover;">
+                    <div class="card-body ">
+                        <p class="card-text-likes mb-0"><strong>364 Likes</strong></p>
+                        <p class="card-text">Cómo podemos ver en este post y en el titulo en efecto lo que hay en la imagen son gatitos🐈‍⬛🐈‍⬛.</p>
+                    </div>
+                </div>
+                <div class="card my-3" style="width: 25rem;">
+                    <div class="card-text d-flex justify-content-between align-items-center px-2">
+                        <h5 class="card-title">Cocinando</h5>
+                        <p style="font-size:12px;">02/10</p>
+                    </div>
+                    <img src="https://cdn.pixabay.com/photo/2024/01/31/16/15/kitchen-8544377_1280.png" style="aspect-ratio: 1/1; object-fit: cover;">
+                    <div class="card-body mb-0">
+                        <p class="card-text-likes mb-0"><strong>215 Likes</strong></p>
+                        <p class="card-text">Mi cocina con el filtro de estudio Ghibli 🍳 .</p>
+                    </div>
+                </div>
+                <div class="card my-3" style="width: 25rem;">
+                    <div class="card-text d-flex justify-content-between align-items-center px-2">
+                        <h5 class="card-title">Zoro</h5>
+                        <p style="font-size:12px;">03/10</p>
+                    </div>
+                    <img src="https://m.media-amazon.com/images/M/MV5BNGZkMGYxNGItZmM3MC00NjJmLTg1NzktYzg5ZmY3NDE2ZTMyXkEyXkFqcGc@._V1_.jpg" style="aspect-ratio: 1/1; object-fit: cover;">
+                    <div class="card-body">
+                        <p class="card-text-likes mb-0"><strong>978 Likes</strong></p>
+                        <p class="card-text">Mejor personaje de One Piece ⚔️🔥🔥🔥.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+            crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/a28047fbb9.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
