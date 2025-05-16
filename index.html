@@ -29,37 +29,6 @@
                     data-bs-target="#staticBackdrop">
                     Create a new post
                 </button>
-                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
-                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                Caption:
-                                <div class="input-group">
-                                    <textarea class="form-control" aria-label="With textarea"
-                                        placeholder="Add the caption of your post here"></textarea>
-                                </div>
-                                <div class="modal-icons mt-3">
-                                    <button type="button" class="btn btn-light">
-                                        <i class="fa-solid fa-camera"></i>
-                                    </button>
-                                    <button type="button" class="btn btn-light">
-                                        <i class="fa-solid fa-location-dot"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-success">Publish</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <div class="dropdown">
                     <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
                         aria-expanded="false">
@@ -78,6 +47,38 @@
             </div>
         </div>
     </nav>
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Caption:
+                    <div class="input-group">
+                        <textarea class="form-control" aria-label="With textarea"
+                            placeholder="Add the caption of your post here"></textarea>
+                    </div>
+                    <div class="modal-icons mt-3">
+                        <button type="button" class="btn btn-light">
+                            <i class="fa-solid fa-camera"></i>
+                        </button>
+                        <button type="button" class="btn btn-light">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success">Publish</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="container-fluid" >
         <ul class="nav nav-tabs border-0 d-flex justify-content-center mb-3" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
@@ -94,58 +95,58 @@
         <div class="tab-content d-flex justify-content-center" id="myTabContent">
             <div class="tab-pane fade show active mx-5" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
                 tabindex="0">
-                <div class="row mx-3 row-cols-1 row-cols-md-3 g-3 mb-5">
+                <div class="row mx-3 row-cols-1 row-cols-md-3 g-3 mb-5">                   
                     <div class="col">
                         <div class="card border-0">
                             <img class="card-img" 
-                                src="https://cdn.pixabay.com/photo/2017/04/30/18/33/kittens-2273598_1280.jpg"style="aspect-ratio: 1/1; object-fit: cover;" >
+                                src="https://cdn.pixabay.com/photo/2017/04/30/18/33/kittens-2273598_1280.jpg" style="aspect-ratio: 1/1; object-fit: cover;">
                         </div>
                     </div>
                     <div class="col">
                         <div class="card border-0">
                             <img class="card-img" 
-                                src="https://cdn.pixabay.com/photo/2024/01/31/16/15/kitchen-8544377_1280.png"style="aspect-ratio: 1/1; object-fit: cover;" >
+                                src="https://cdn.pixabay.com/photo/2024/01/31/16/15/kitchen-8544377_1280.png" style="aspect-ratio: 1/1; object-fit: cover;">
                         </div>
                     </div>
                     <div class="col">
                         <div class="card border-0">
                             <img class="card-img" 
-                                src="https://m.media-amazon.com/images/M/MV5BNGZkMGYxNGItZmM3MC00NjJmLTg1NzktYzg5ZmY3NDE2ZTMyXkEyXkFqcGc@._V1_.jpg"style="aspect-ratio: 1/1; object-fit: cover;" >
+                                src="https://m.media-amazon.com/images/M/MV5BNGZkMGYxNGItZmM3MC00NjJmLTg1NzktYzg5ZmY3NDE2ZTMyXkEyXkFqcGc@._V1_.jpg" style="aspect-ratio: 1/1; object-fit: cover;">
                         </div>
                     </div>
                     <div class="col">
                         <div class="card border-0">
                             <img class="card-img" 
-                                src="https://cdn.pixabay.com/photo/2017/06/24/18/06/japan-2438358_1280.jpg"style="aspect-ratio: 1/1; object-fit: cover;" >
+                                src="https://cdn.pixabay.com/photo/2017/06/24/18/06/japan-2438358_1280.jpg" style="aspect-ratio: 1/1; object-fit: cover;">
                         </div>
                     </div>
                     <div class="col">
                         <div class="card border-0">
                             <img class="card-img" 
-                                src="https://cdn.pixabay.com/photo/2025/04/30/13/27/red-baron-squadron-9569430_1280.jpg"style="aspect-ratio: 1/1; object-fit: cover;" >
+                                src="https://cdn.pixabay.com/photo/2025/04/30/13/27/red-baron-squadron-9569430_1280.jpg" style="aspect-ratio: 1/1; object-fit: cover;">
                         </div>
                     </div>
                     <div class="col">
                         <div class="card border-0">
                             <img class="card-img" 
-                                src="https://cdn.pixabay.com/photo/2025/04/20/08/44/purple-leaf-plum-9545165_1280.jpg"style="aspect-ratio: 1/1; object-fit: cover;" >
+                                src="https://cdn.pixabay.com/photo/2025/04/20/08/44/purple-leaf-plum-9545165_1280.jpg" style="aspect-ratio: 1/1; object-fit: cover;">
                         </div>
                     </div>
                     <div class="col">
                         <div class="card border-0">
                             <img class="card-img" 
-                                src="https://cdn.pixabay.com/photo/2022/11/30/19/21/zizhu-temple-7627473_960_720.jpg"style="aspect-ratio: 1/1; object-fit: cover;" >
+                                src="https://cdn.pixabay.com/photo/2022/11/30/19/21/zizhu-temple-7627473_960_720.jpg" style="aspect-ratio: 1/1; object-fit: cover;">
                         </div>
                     </div>
                     <div class="col">
                         <div class="card border-0">
                             <img class="card-img" 
-                                src="https://cdn.pixabay.com/photo/2024/12/28/13/28/tram-9296118_960_720.jpg"style="aspect-ratio: 1/1; object-fit: cover;" >
+                                src="https://cdn.pixabay.com/photo/2024/12/28/13/28/tram-9296118_960_720.jpg" style="aspect-ratio: 1/1; object-fit: cover;">
                         </div>
                     </div>
                     <div class="col">
                         <div class="card border-0">
-                            <img class="card-img"src="https://cdn.pixabay.com/photo/2018/01/29/10/40/sparks-3115784_1280.jpg"style="aspect-ratio: 1/1; object-fit: cover;" >
+                            <img class="card-img" src="https://cdn.pixabay.com/photo/2018/01/29/10/40/sparks-3115784_1280.jpg" style="aspect-ratio: 1/1; object-fit: cover;">
                         </div>
                     </div>
                 </div>
@@ -156,7 +157,7 @@
                         <h5 class="card-title">Gatitos</h5>
                         <p style="font-size:12px;">01/10</p>
                     </div>
-                    <img src="https://cdn.pixabay.com/photo/2017/04/30/18/33/kittens-2273598_1280.jpg"style="aspect-ratio: 1/1; object-fit: cover;">
+                    <img src="https://cdn.pixabay.com/photo/2017/04/30/18/33/kittens-2273598_1280.jpg" style="aspect-ratio: 1/1; object-fit: cover;">
                     <div class="card-body ">
                         <p class="card-text-likes mb-0"><strong>364 Likes</strong></p>
                         <p class="card-text">Cómo podemos ver en este post y en el titulo en efecto lo que hay en la imagen son gatitos🐈‍⬛🐈‍⬛.</p>
